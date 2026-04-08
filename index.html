@@ -81,6 +81,49 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody></tbody>
 
+            <tr onmouseout="graph_stop()" onmouseover="graph_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='graph_image'>
+                    <img src='images/generalizable_graph.png' width=100%>
+                  </div>
+                  <img src='images/generalizable_graph.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function graph_start() {
+                    document.getElementById('graph_image').style.opacity = "1";
+                  }
+
+                  function graph_stop() {
+                    document.getElementById('graph_image').style.opacity = "0";
+                  }
+                  graph_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2506.00845">
+                  <span class="papertitle">Generalizable LLM Learning of Graph Synthetic Data with Post-training
+                    Alignment</span>
+                </a>
+                <br>
+                <strong>Yizhuo Zhang*</strong>,
+                <a href="https://arthur-heng.github.io/">Heng Wang*</a>,
+                <a href="https://bunsenfeng.github.io/">Shangbin Feng*</a>,
+                <a href="https://zhaoxuan.info/">Zhaoxuan Tan</a>,
+                Xinyun Liu,
+                <a href="https://homes.cs.washington.edu/~yuliats/">Yulia Tsvetkov</a>
+                <br>
+                <em>ACL Findings</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2506.00845">Paper Link</a>
+                <p></p>
+                <p>
+                  Employing post-training alignment algorithms against rigid memorizing patterns to unlock generalizable
+                  learning of graphs using synthetic data.
+                </p>
+              </td>
+            </tr>
+
 
             <tr onmouseout="gaze_stop()" onmouseover="gaze_start()">
               <td style="padding:16px;width:20%;vertical-align:middle">
@@ -127,48 +170,7 @@
             </tr>
 
 
-            <tr onmouseout="graph_stop()" onmouseover="graph_start()">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='graph_image'>
-                    <img src='images/generalizable_graph.png' width=100%>
-                  </div>
-                  <img src='images/generalizable_graph.png' width=100%>
-                </div>
-                <script type="text/javascript">
-                  function graph_start() {
-                    document.getElementById('graph_image').style.opacity = "1";
-                  }
 
-                  function graph_stop() {
-                    document.getElementById('graph_image').style.opacity = "0";
-                  }
-                  graph_stop()
-                </script>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2506.00845">
-                  <span class="papertitle">Generalizable LLM Learning of Graph Synthetic Data with Post-training
-                    Alignment</span>
-                </a>
-                <br>
-                <strong>Yizhuo Zhang</strong>,
-                <a href="https://arthur-heng.github.io/">Heng Wang</a>,
-                <a href="https://bunsenfeng.github.io/">Shangbin Feng</a>,
-                <a href="https://zhaoxuan.info/">Zhaoxuan Tan</a>,
-                Xinyun Liu,
-                <a href="https://homes.cs.washington.edu/~yuliats/">Yulia Tsvetkov</a>
-                <br>
-                <em>arXiv</em>, 2025
-                <br>
-                <a href="https://arxiv.org/abs/2506.00845">Paper Link</a>
-                <p></p>
-                <p>
-                  Employing post-training alignment algorithms against rigid memorizing patterns to unlock generalizable
-                  learning of graphs using synthetic data.
-                </p>
-              </td>
-            </tr>
 
 
             <tr onmouseout="nlgift_stop()" onmouseover="nlgift_start()">
