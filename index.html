@@ -81,6 +81,50 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody></tbody>
 
+            <tr onmouseout="univid_stop()" onmouseover="univid_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='univid_image'>
+                    <img src='images/univid_pipeline.png' width=100%>
+                  </div>
+                  <img src='images/univid_pipeline.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function univid_start() {
+                    document.getElementById('univid_image').style.opacity = "1";
+                  }
+
+                  function univid_stop() {
+                    document.getElementById('univid_image').style.opacity = "0";
+                  }
+                  univid_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2606.05748">
+                  <span class="papertitle">UNIVID: Unified Vision-Language Model for Video Moderation</span>
+                </a>
+                <br>
+                Kejuan Yang*,
+                <strong>Yizhuo Zhang*</strong>,
+                Mingyuan Du,
+                Yue Zhang,
+                Dixin Zheng,
+                Kaili Zhao,
+                Yang Xiao,
+                Hanzhong Liang,
+                Kenan Xiao
+                <br>
+                <em>ACL Industry Track</em>, 2026 &nbsp; <font color="red"><strong>(Oral Presentation)</strong></font>
+                <br>
+                <a href="https://arxiv.org/abs/2606.05748">Paper Link</a>
+                <p></p>
+                <p>
+                  A unified vision-language model (VLM) for video moderation that generates policy-aware captions as interpretable intermediate representations, improving violation detection while reducing overkill rates and engineering overhead.
+                </p>
+              </td>
+            </tr>
+
             <tr onmouseout="graph_stop()" onmouseover="graph_start()">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
